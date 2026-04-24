@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Đoàn Công Việt — Business Analyst Intern</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVBAR
+  ============================================================ -->
+  <nav id="navbar">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="#hero" class="nav-logo">DCV.</a>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div style="display:flex;align-items:center;gap:12px;">
+          <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+          <div id="hamburger" aria-label="Menu" role="button" tabindex="0">
+            <span></span><span></span><span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile nav -->
+  <div class="nav-mobile" id="nav-mobile">
+    <button class="nav-mobile-close" id="nav-close">✕</button>
+    <a href="#about" class="nav-mobile-link">About</a>
+    <a href="#skills" class="nav-mobile-link">Skills</a>
+    <a href="#projects" class="nav-mobile-link">Projects</a>
+    <a href="#education" class="nav-mobile-link">Education</a>
+    <a href="#contact" class="nav-mobile-link">Contact</a>
+  </div>
+
+  <!-- ============================================================
+       HERO
+  ============================================================ -->
+  <section id="hero">
+    <div class="hero-grid"></div>
+    <div class="hero-blob hero-blob-1"></div>
+    <div class="hero-blob hero-blob-2"></div>
+
+    <div class="container" style="position:relative;z-index:1;width:100%;">
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:32px;">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="hero-badge-dot"></span>
+            Available for Internship Opportunities
+          </div>
+
+          <h1 class="hero-name">
+            Hi, I'm<br>
+            <span class="accent">Đoàn Công Việt</span>
+          </h1>
+
+          <div class="hero-role">
+            <span id="typing-text"></span><span id="typing-cursor"></span>
+          </div>
+
+          <p class="hero-tagline">
+            I build scalable and user-friendly web applications.
+          </p>
+
+          <div class="hero-cta">
+            <a href="CV_DoanCongViet.pdf" download class="btn btn-download">
+              <i class="fa-solid fa-download"></i> Tải CV
+            </a>
+            <a href="#projects" class="btn btn-primary">
+              <i class="fa-solid fa-folder-open"></i> View Projects
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <i class="fa-solid fa-envelope"></i> Contact Me
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-image" style="display: flex; justify-content: center; align-items: center; max-width: 400px; width: 100%; border-radius: 50%; padding: 10px; background: linear-gradient(135deg, var(--blue), var(--orange)); box-shadow: var(--shadow-lg);">
+          <img src="images/avatar.jpg" alt="Đoàn Công Việt" style="width: 100%; aspect-ratio: 1; border-radius: 50%; object-fit: cover; border: 4px solid var(--bg2);" />
+        </div>
+
+        <!-- Side socials (desktop) -->
+        <div class="hero-socials">
+          <a href="https://github.com/congviet2201" target="_blank" class="hero-social-link" title="GitHub">
+            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/doancongvietba/" target="_blank" class="hero-social-link" title="LinkedIn">
+            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="mailto:viet.doan27@student.passerellesnumeriques.org" class="hero-social-link" title="Email">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+      <span>SCROLL</span>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ABOUT
+  ============================================================ -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="about-grid">
+
+        <!-- Avatar column -->
+        <div class="about-avatar-wrap reveal">
+          <div class="about-avatar-box">
+            <img src="images/avatar.jpg" alt="Đoàn Công Việt" style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px;" />
+            <div class="about-avatar-deco"></div>
+            <div class="about-avatar-deco2"></div>
+          </div>
+          <div class="about-card about-card-1">📍 Sơn Trà, Đà Nẵng</div>
+          <div class="about-card about-card-2">🎓 PNV Student</div>
+        </div>
+
+        <!-- Text column -->
+        <div class="about-text reveal reveal-delay-1">
+          <span class="tag">About Me</span>
+          <h2 class="section-title">Who am <span>I?</span></h2>
+
+          <p>
+            My name is Doan Cong Viet, a second-year IT student at Passerelles Numériques Vietnam (PNV).
+            I am looking for a Business Analyst Intern position at KMS Technology. As a student at PNV,
+            I have been rigorously trained in both technical foundations and essential soft skills,
+            which has prepared me to become a resilient and adaptable professional in the IT industry.
+          </p>
+
+          <div class="about-info-grid">
+            <div class="about-info-item">
+              <span class="about-info-label">Name</span>
+              <span class="about-info-value">Đoàn Công Việt</span>
+            </div>
+            <div class="about-info-item">
+              <span class="about-info-label">Role</span>
+              <span class="about-info-value">Business Analyst Intern</span>
+            </div>
+            <div class="about-info-item">
+              <span class="about-info-label">Location</span>
+              <span class="about-info-value">Sơn Trà, Đà Nẵng</span>
+            </div>
+            <div class="about-info-item">
+              <span class="about-info-label">Email</span>
+              <span class="about-info-value">
+                <a href="mailto:viet.doan27@student.passerellesnumeriques.org">viet.doan27@...</a>
+              </span>
+            </div>
+            <div class="about-info-item">
+              <span class="about-info-label">Phone</span>
+              <span class="about-info-value"><a href="tel:0933145794">0933 145 794</a></span>
+            </div>
+            <div class="about-info-item">
+              <span class="about-info-label">Status</span>
+              <span class="about-info-value" style="color:#22c55e;font-weight:600;">Open to Work ✓</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SKILLS
+  ============================================================ -->
+  <section id="skills" class="section">
+    <div class="container">
+      <span class="tag reveal">Skills</span>
+      <h2 class="section-title reveal">What I <span>Know</span></h2>
+      <p class="section-sub reveal">A combination of technical expertise and strong soft skills built through hands-on projects and collaborative work.</p>
+
+      <div class="skills-layout">
+
+        <!-- Soft skills -->
+        <div class="reveal">
+          <div class="skill-cat-label">Soft Skills</div>
+          <div class="soft-skills-grid">
+            <div class="skill-chip"><i class="fa-solid fa-brain"></i> Self-Study</div>
+            <div class="skill-chip"><i class="fa-solid fa-users"></i> Teamwork</div>
+            <div class="skill-chip"><i class="fa-solid fa-comments"></i> Communication</div>
+            <div class="skill-chip"><i class="fa-solid fa-clock"></i> Time Management</div>
+            <div class="skill-chip"><i class="fa-solid fa-lightbulb"></i> Critical Thinking</div>
+          </div>
+        </div>
+
+        <!-- Technical skills -->
+        <div class="reveal reveal-delay-1">
+
+          <div class="skill-category">
+            <div class="skill-cat-label">Frontend</div>
+            <div class="skills-grid">
+              <div class="skill-card">
+                <i class="fa-brands fa-html5 skill-icon" style="color: #E34F26;"></i>
+                <span class="skill-name-text">HTML/CSS</span>
+              </div>
+              <div class="skill-card">
+                <i class="fa-brands fa-js skill-icon" style="color: #F7DF1E;"></i>
+                <span class="skill-name-text">JavaScript</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <div class="skill-cat-label">Backend</div>
+            <div class="skills-grid">
+              <div class="skill-card orange">
+                <i class="fa-brands fa-php skill-icon" style="color: #777BB4;"></i>
+                <span class="skill-name-text">PHP</span>
+              </div>
+              <div class="skill-card orange">
+                <i class="fa-brands fa-laravel skill-icon" style="color: #FF2D20;"></i>
+                <span class="skill-name-text">Laravel</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <div class="skill-cat-label">Database & Tools</div>
+            <div class="skills-grid">
+              <div class="skill-card green">
+                <i class="fa-solid fa-database skill-icon" style="color: #4479A1;"></i>
+                <span class="skill-name-text">MySQL</span>
+              </div>
+              <div class="skill-card green">
+                <i class="fa-brands fa-github skill-icon" style="color: var(--text);"></i>
+                <span class="skill-name-text">Git / GitHub</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PROJECTS
+  ============================================================ -->
+  <section id="projects" class="section">
+    <div class="container">
+      <span class="tag reveal">Projects</span>
+      <h2 class="section-title reveal">Featured <span>Work</span></h2>
+      <p class="section-sub reveal">Real-world projects built to solve problems — from library systems to competitive challenge platforms.</p>
+
+      <div class="projects-grid">
+
+        <!-- Project 1: VAT Challenge HUB -->
+        <div class="project-card reveal">
+          <div class="project-header">
+            <div class="project-icon">🏆</div>
+            <div class="project-links">
+              <a href="https://github.com/congviet2201/VAT_Challange_HUB" target="_blank" class="project-link-btn" title="GitHub">
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-name">VAT Challenge HUB</div>
+          <p class="project-desc">Challenge Hub is a web platform that helps you manage and track personal challenges. It is built using the Laravel framework. The goal of this project is to create a community where everyone can join different challenges to improve themselves, stay healthy, and reach their goals in life.</p>
+          <div class="project-stack">
+            <span class="stack-chip">PHP</span>
+            <span class="stack-chip">Laravel</span>
+            <span class="stack-chip">MySQL</span>
+            <span class="stack-chip">JavaScript</span>
+          </div>
+        </div>
+
+        <!-- Project 2: Library Management -->
+        <div class="project-card reveal reveal-delay-1">
+          <div class="project-header">
+            <div class="project-icon" style="background:var(--orange-dim);">📚</div>
+            <div class="project-links">
+              <a href="https://github.com/ThuyTrang27/library_management_project" target="_blank" class="project-link-btn" title="GitHub">
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-name">Library Management System</div>
+          <p class="project-desc">A full-featured library management app handling book inventory, borrowing records, and member management with an intuitive admin dashboard.</p>
+          <div class="project-stack">
+            <span class="stack-chip">PHP</span>
+            <span class="stack-chip">MySQL</span>
+            <span class="stack-chip">HTML/CSS</span>
+            <span class="stack-chip">Bootstrap</span>
+          </div>
+        </div>
+
+        <!-- Project 3: Web Leesin -->
+        <div class="project-card reveal reveal-delay-2">
+          <div class="project-header">
+            <div class="project-icon" style="background:rgba(34,197,94,0.1);">🥋</div>
+            <div class="project-links">
+              <a href="https://github.com/hovansang113/WEB-LESSIN" target="_blank" class="project-link-btn" title="GitHub">
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-name">Web Leesin</div>
+          <p class="project-desc">A themed fan website inspired by the iconic League of Legends champion Lee Sin, featuring interactive animations and responsive design for a compelling user experience.</p>
+          <div class="project-stack">
+            <span class="stack-chip">HTML</span>
+            <span class="stack-chip">CSS</span>
+            <span class="stack-chip">JavaScript</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       EDUCATION
+  ============================================================ -->
+  <section id="education" class="section">
+    <div class="container">
+      <span class="tag reveal">Education</span>
+      <h2 class="section-title reveal">Academic <span>Background</span></h2>
+      <p class="section-sub reveal">Where I've been learning and growing as a developer.</p>
+
+      <div class="reveal">
+        <div class="education-card">
+          <div class="edu-logo">🎓</div>
+          <div>
+            <div class="edu-school">Passerelles Numériques Vietnam</div>
+            <div class="edu-degree">Software Engineering — IT Student</div>
+            <div class="edu-period">
+              <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              09/2023 – 10/2027 · Đà Nẵng
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACT
+  ============================================================ -->
+  <section id="contact" class="section">
+    <div class="container">
+      <span class="tag reveal">Contact</span>
+      <h2 class="section-title reveal">Let's <span>Connect</span></h2>
+
+      <div class="contact-grid">
+
+        <div class="reveal">
+          <p class="contact-intro">
+            I'm actively looking for internship opportunities as a Business Analyst.
+            Whether you have a question, an opportunity, or just want to say hi — my inbox is always open!
+          </p>
+
+          <div class="contact-items">
+            <a href="mailto:viet.doan27@student.passerellesnumeriques.org" class="contact-item">
+              <div class="contact-icon blue">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <div class="contact-detail-label">Email</div>
+                <div class="contact-detail-val">viet.doan27@student.passerellesnumeriques.org</div>
+              </div>
+            </a>
+
+            <a href="tel:0933145794" class="contact-item">
+              <div class="contact-icon orange">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.78a16 16 0 0 0 6.29 6.29l1.85-1.85a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <div class="contact-detail-label">Phone</div>
+                <div class="contact-detail-val">0933 145 794</div>
+              </div>
+            </a>
+
+            <a href="https://github.com/congviet2201" target="_blank" class="contact-item">
+              <div class="contact-icon blue">
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              </div>
+              <div>
+                <div class="contact-detail-label">GitHub</div>
+                <div class="contact-detail-val">github.com/congviet2201</div>
+              </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/doancongvietba/" target="_blank" class="contact-item">
+              <div class="contact-icon green">
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              </div>
+              <div>
+                <div class="contact-detail-label">LinkedIn</div>
+                <div class="contact-detail-val">linkedin.com/in/doancongvietba</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-cta-box reveal reveal-delay-1">
+          <h3>Ready to collaborate? 🚀</h3>
+          <p>I'm open to internship roles, collaborative projects, and learning opportunities. Let's build something great together.</p>
+          <a href="mailto:viet.doan27@student.passerellesnumeriques.org" class="btn btn-primary">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Send Email
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer>
+    <div class="container">
+      <p>Designed & Built by <span>Đoàn Công Việt</span> · © 2025</p>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       JAVASCRIPT
+  ============================================================ -->
+  <script src="script.js"></script>
+
+</body>
+</html>
