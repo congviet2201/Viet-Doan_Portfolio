@@ -43,7 +43,8 @@
        TYPING EFFECT
     ------------------------------------------------------------------ */
     const roles = [
-      'Business Analyst - IT Student At PNV'
+      'Business Analyst Intern',
+      'IT Student at PNV'
     ];
     let roleIdx = 0, charIdx = 0, deleting = false;
     const typingEl = document.getElementById('typing-text');
@@ -54,10 +55,19 @@
         typingEl.textContent = current.substring(0, charIdx + 1);
         charIdx++;
         if (charIdx === current.length) {
+          deleting = true;
+          setTimeout(typeLoop, 1800);
           return;
         }
+      } else {
+        typingEl.textContent = current.substring(0, charIdx - 1);
+        charIdx--;
+        if (charIdx === 0) {
+          deleting = false;
+          roleIdx = (roleIdx + 1) % roles.length;
+        }
       }
-      setTimeout(typeLoop, 95);
+      setTimeout(typeLoop, deleting ? 55 : 95);
     }
     typeLoop();
 
