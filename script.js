@@ -6,7 +6,7 @@
 
     function setTheme(dark) {
       html.setAttribute('data-theme', dark ? 'dark' : 'light');
-      toggleBtn.textContent = dark ? '☀️' : '🌙';
+      toggleBtn.textContent = dark ? '\u2600\uFE0F' : '\uD83C\uDF19';
       localStorage.setItem('theme', dark ? 'dark' : 'light');
     }
 
@@ -86,4 +86,3 @@
       { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
     );
     reveals.forEach(el => observer.observe(el));
-
